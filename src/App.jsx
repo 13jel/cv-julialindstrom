@@ -136,7 +136,7 @@ export default function App() {
       </Section>
 
       <footer className="foot rise" style={{ animationDelay: "0.35s" }}>
-        <span>{profile.name}</span>
+        <span className="foot-copy">© {new Date().getFullYear()} {profile.name}</span>
         <a href={`mailto:${profile.email}`}>{profile.email} <ArrowOut /></a>
       </footer>
     </div>
