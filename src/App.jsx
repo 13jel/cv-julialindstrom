@@ -23,22 +23,26 @@ export default function App() {
   return (
     <div className="wrap">
       <header className="hero rise">
-        <div className="hero-meta">
-          <span className="dot" /> available for work · {profile.location}
+        <div className="hero-text">
+          <div className="hero-meta">
+            <span className="dot" /> available for work · {profile.location}
+          </div>
+          <h1 className="hero-name">{profile.name}</h1>
+          <p className="hero-title">
+            {profile.title} <span className="slash">/</span> {profile.tagline}
+          </p>
+          <nav className="hero-links">
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            {profile.links.github && <a href={profile.links.github} target="_blank" rel="noreferrer">GitHub <ArrowOut /></a>}
+            {profile.links.linkedin && <a href={profile.links.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowOut /></a>}
+            {profile.links.website && <a href={profile.links.website} target="_blank" rel="noreferrer">Website <ArrowOut /></a>}
+          </nav>
         </div>
-        <h1 className="hero-name">{profile.name}</h1>
-        <p className="hero-title">
-          {profile.title} <span className="slash">/</span> {profile.tagline}
-        </p>
-        <nav className="hero-links">
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          {profile.links.github && <a href={profile.links.github} target="_blank" rel="noreferrer">GitHub <ArrowOut /></a>}
-          {profile.links.linkedin && <a href={profile.links.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowOut /></a>}
-          {profile.links.website && <a href={profile.links.website} target="_blank" rel="noreferrer">Website <ArrowOut /></a>}
-        </nav>
-        <div className="hero-image">
-          <img src={profile.photo} alt={profile.photoAlt} />
-        </div>
+        {profile.photo && (
+          <div className="hero-image">
+            <img src={profile.photo} alt={profile.photoAlt} />
+          </div>
+        )}
       </header>
 
       <Section id="about" label="01 / about" delay={0.1}>
