@@ -1,11 +1,21 @@
 /* ---------- HERO ---------- */
-.hero { padding: 80px 0 30px; }
+.hero {
+  padding: 100px 0 70px; border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 56px;
+}
+.hero-text { flex: 1; min-width: 0; }
+.hero-image { flex-shrink: 0; }
+.hero-image img {
+  display: block; width: 240px; height: 300px; object-fit: cover;
+  border-radius: 8px; border: 1px solid var(--line);
+  filter: grayscale(0.15) contrast(1.02);
+}
 .hero-meta {
   font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--text-dim); display: flex; align-items: center; gap: 9px; margin-bottom: 30px;
 }
 .dot {
-  width: 9px; height: 9px; border-radius: 50%; background: var(--accent);
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
   box-shadow: 0 0 0 0 var(--accent); animation: pulse 2.2s infinite;
 }
 @keyframes pulse {

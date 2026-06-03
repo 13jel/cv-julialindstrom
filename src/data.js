@@ -1,6 +1,5 @@
 // ============================================================
-//  EDIT EVERYTHING HERE. This is the only file you need to touch.
-//  Replace the placeholder text, add/remove items in the arrays.
+//  EDIT HERE.
 // ============================================================
 
 export const profile = {
@@ -9,6 +8,8 @@ export const profile = {
   tagline: "I build fast, reliable web apps end to end.",
   location: "Sundsvall, Sweden",
   email: "juliaelindstrom@outlook.com",
+  photo: "/me.png"
+  photoAlt: "Julia Lindström"
   // Remove any link you don't want — it just won't render.
   links: {
     github: "https://github.com/13jel",
@@ -33,7 +34,7 @@ export const projects = [
   },
   {
     name: "Contact List",
-    blurb: "School project where I built a contact list app.",
+    blurb: "Individual school project where I built a contact list app.",
     live: "https://contactlist-beryl.vercel.app/",
     repo: "https://github.com/13jel/contact.list",
     stack: ["JavaScript", "CSS", "HTML"],
@@ -41,7 +42,7 @@ export const projects = [
   },
   {
     name: "Receptsamlingen",
-    blurb: "School project where I built a contact list app.",
+    blurb: "Group project where we built a contact list app.",
     live: "https://receptsamlingen.vercel.app/",
     repo: "https://github.com/Harald-Wallin/Frameworks_GroupProj.git",
     stack: ["React", "JavaScript", "CSS", "HTML"],
