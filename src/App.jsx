@@ -36,6 +36,9 @@ export default function App() {
           {profile.links.linkedin && <a href={profile.links.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowOut /></a>}
           {profile.links.website && <a href={profile.links.website} target="_blank" rel="noreferrer">Website <ArrowOut /></a>}
         </nav>
+        <div className="hero-image">
+          <img src={profile.photo} alt={profile.photoAlt} />
+        </div>
       </header>
 
       <Section id="about" label="01 / about" delay={0.1}>

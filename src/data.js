@@ -8,7 +8,7 @@ export const profile = {
   tagline: "I build fast, reliable web apps end to end.",
   location: "Sundsvall, Sweden",
   email: "juliaelindstrom@outlook.com",
-  photo: "/public/me.png",
+  photo: "/me.png",
   photoAlt: "Julia Lindström",
   // Remove any link you don't want — it just won't render.
   links: {

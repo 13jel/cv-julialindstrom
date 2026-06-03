@@ -1,9 +1,9 @@
 /* ---------- HERO ---------- */
 .hero {
   padding: 100px 0 70px; border-bottom: 1px solid var(--line);
-  display: flex; align-items: center; gap: 56px;
+  display: flex; align-items: center; justify-content: space-between; gap: 56px;
 }
-.hero-text { flex: 1; min-width: 0; }
+.hero-text { flex: 1; min-width: 0; max-width: 560px; }
 .hero-image { flex-shrink: 0; }
 .hero-image img {
   display: block; width: 240px; height: 300px; object-fit: cover;
@@ -23,8 +23,21 @@
   70% { box-shadow: 0 0 0 8px rgba(240,168,48,0); }
   100% { box-shadow: 0 0 0 0 rgba(240,168,48,0); }
 }
+.hero-meta {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-dim); display: flex; align-items: center; gap: 9px; margin-bottom: 30px;
+}
+.dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+  box-shadow: 0 0 0 0 var(--accent); animation: pulse 2.2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(240,168,48,0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(240,168,48,0); }
+  100% { box-shadow: 0 0 0 0 rgba(240,168,48,0); }
+}
 .hero-name {
-  font-family: var(--serif); font-weight: 900; font-size: clamp(48px, 9vw, 96px);
+  font-family: var(--serif); font-weight: 900; font-size: clamp(44px, 6vw, 76px);
   line-height: 0.95; letter-spacing: -0.02em; margin-bottom: 22px;
 }
 .hero-title {
@@ -127,5 +140,6 @@
   .section { grid-template-columns: 1fr; gap: 16px; padding: 44px 0; }
   .proj-grid, .skills-grid { grid-template-columns: 1fr; }
   .proj-row { flex-direction: column; gap: 12px; }
-  .hero { padding: 70px 0 50px; }
+  .hero { padding: 70px 0 50px; flex-direction: column-reverse; align-items: flex-start; gap: 32px; }
+  .hero-image img { width: 140px; height: 175px; }
 }
