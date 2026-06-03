@@ -8,8 +8,8 @@ export const profile = {
   tagline: "I build fast, reliable web apps end to end.",
   location: "Sundsvall, Sweden",
   email: "juliaelindstrom@outlook.com",
-  photo: "/me.png"
-  photoAlt: "Julia Lindström"
+  photo: "/public/me.png",
+  photoAlt: "Julia Lindström",
   // Remove any link you don't want — it just won't render.
   links: {
     github: "https://github.com/13jel",
