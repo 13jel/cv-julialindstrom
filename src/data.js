@@ -33,6 +33,14 @@ export const projects = [
     featured: true,
   },
   {
+    name: "The Rooted Pages",
+    blurb: "The Rooted Pages — An individually built fullstack e-commerce platform with admin panel, role-based auth, and database-backed cart and orders.",
+    live: "https://the-rooted-pages.vercel.app/",
+    repo: "https://github.com/13jel/trp-backend.git",
+    stack: ["React", "Vite", "Express", "TypeScript", "Supabase", "Vercel", "Render", "CSS", "HTML"],
+    featured: true,
+  },
+  {
     name: "Contact List",
     blurb: "Individual school project where I built a contact list app.",
     live: "https://contactlist-beryl.vercel.app/",
@@ -54,7 +62,7 @@ export const projects = [
     live: "https://mealexplorer-one.vercel.app/",   // deployed link
     repo: "https://github.com/13jel/meal.explorer", // optional
     stack: ["JavaScript", "CSS", "HTML"],
-    featured: true,
+    featured: false, // featured projects show larger, at the top
   },
   {
     name: "Sorken",
@@ -67,10 +75,10 @@ export const projects = [
 ];
 // Group your skills however you like. Add or remove categories freely.
 export const skills = [
-  { group: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue"] },
-  { group: "Backend", items: ["Node.js", "Express", "Python", "REST", "GraphQL"] },
-  { group: "Data", items: ["PostgreSQL", "MongoDB", "Redis", "Prisma"] },
-  { group: "Tooling", items: ["Git", "Vercel", "CI/CD"] },
+  { group: "Frontend", items: ["React", "Vite", "Next.js", "TypeScript", "Tailwind CSS", "Vue"] },
+  { group: "Backend", items: ["Node.js", "Express", "TypeScript", "Python", "REST", "GraphQL"] },
+  { group: "Data", items: ["PostgreSQL", "MongoDB", "Supabase", "Row Level Security", "Redis", "Prisma"] },
+  { group: "Tooling", items: ["Git", "Vercel", "Render", "CI/CD"] },
 ];
 
 // Newest first.

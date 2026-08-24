@@ -1,6 +1,6 @@
 /* ---------- HERO ---------- */
 .hero {
-  padding: 100px 0 70px; border-bottom: 1px solid var(--line);
+  padding: 100px 0 50px; border-bottom: 1px solid var(--line);
   display: flex; align-items: center; justify-content: space-between; gap: 56px;
 }
 .hero-text { flex: 1; min-width: 0; max-width: 560px; }
