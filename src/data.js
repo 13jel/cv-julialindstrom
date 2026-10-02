@@ -17,8 +17,9 @@ export const profile = {
     //website: "https://yourdomain.com",
   },
   bio: [
-    "I'm a fullstack developer in the making, currently studying at Medieinstitutet. I'm drawn to the intersection of technical craft and human experience — writing code that doesn't just function, but feels intuitive and welcoming to everyone who uses it.",
+    "I'm a fullstack developer in the making, currently studying at Medieinstitutet. I'm drawn to the intersection of technical craft and human experience - writing code that doesn't just function, but feels intuitive and welcoming to everyone who uses it.",
     "Accessibility is at the heart of how I think about design and development. I believe that technology should be inclusive and empowering, and I strive to create digital experiences that are not only functional but also welcoming to all users. Whether it's through semantic HTML, thoughtful ARIA attributes, or ensuring keyboard navigability, I am committed to making the web a more accessible place for everyone.",
+    "That same attention to detail carries into the visual side of what I build. From wireframes and design systems to hand-drawn pixel art and illustration, I like being part of a project from its first sketch to its last line of code . and I think that range makes me a better developer, not a distraction from being one.",
   ],
 };
 
@@ -34,7 +35,7 @@ export const projects = [
   },
   {
     name: "The Rooted Pages",
-    blurb: "The Rooted Pages — An individually built fullstack e-commerce platform with admin panel, role-based auth, and database-backed cart and orders.",
+    blurb: "The Rooted Pages - An individually built fullstack e-commerce platform with admin panel, role-based auth, and database-backed cart and orders.",
     live: "https://the-rooted-pages.vercel.app/",
     repo: "https://github.com/13jel/trp-backend.git",
     stack: ["React", "Vite", "Express", "TypeScript", "Supabase", "Vercel", "Render", "CSS", "HTML"],
@@ -106,7 +107,7 @@ export const experience = [
     company: "Arbetsförmedlingen",
     period: "2020 — 2022",
     points: [
-      "As an arbetsförmedlare at Arbetsförmedlingen, I provided guidance on career development. I conducted one-on-one consultations to understand clients' skills, experience, and job preferences. This role required strong interpersonal skills, the ability to navigate a complex job market, and a commitment to helping individuals achieve their career goals.",
+      "I worked as an arbetsförmedlare at Arbetsförmedlingen, I provided guidance on career development. I conducted one-on-one consultations to understand clients' skills, experience, and job preferences. This role required strong interpersonal skills, the ability to navigate a complex job market, and a commitment to helping individuals achieve their career goals.",
     ],
   },
 ];
