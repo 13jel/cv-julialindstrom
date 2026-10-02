@@ -49,12 +49,20 @@ export const projects = [
     featured: true,
   },
   {
+    name: "Pizza Arcade",
+    blurb: "Group project building a subscription-tiered pizza delivery arcade game, where I worked across the stack - from wireframes, styleguide and CSS design tokens to building the scoreboard, profile pages, auth context and tier-gated access logic.",
+    live: "https://game-monetization.vercel.app/",
+    repo: "https://github.com/niloscar/game-monetization",
+    stack: ["TypeScript", "CSS"],
+    featured: true,
+  },
+  {
     name: "Receptsamlingen",
-    blurb: "Group project where we built a contact list app.",
+    blurb: "Group project where we built a recipe collection app with React.",
     live: "https://receptsamlingen.vercel.app/",
     repo: "https://github.com/Harald-Wallin/Frameworks_GroupProj.git",
     stack: ["React", "JavaScript", "CSS", "HTML"],
-    featured: true,
+    featured: false, // featured projects show larger, at the top
   },
   {
     name: "Meal Explorer",
@@ -75,10 +83,12 @@ export const projects = [
 ];
 // Group your skills however you like. Add or remove categories freely.
 export const skills = [
-  { group: "Frontend", items: ["React", "Vite", "Next.js", "TypeScript", "Tailwind CSS", "Vue"] },
-  { group: "Backend", items: ["Node.js", "Express", "TypeScript", "Python", "REST", "GraphQL"] },
-  { group: "Data", items: ["PostgreSQL", "MongoDB", "Supabase", "Row Level Security", "Redis", "Prisma"] },
-  { group: "Tooling", items: ["Git", "Vercel", "Render", "CI/CD"] },
+  { group: "Frontend", items: ["React", "Vite", "Next.js", "TypeScript", "Tailwind CSS", "Vue", "HTML5 Canvas API"] },
+  { group: "Backend", items: ["Node.js", "Express", "TypeScript", "Python", "REST", "GraphQL", "PHP"] },
+  { group: "Data", items: ["PostgreSQL", "MongoDB", "Supabase", "Row Level Security", "Redis", "Prisma", "Neon"] },
+  { group: "Tooling", items: ["Git", "GitHub","Vercel", "Render", "CI/CD", "Postman", "VS Code", "Docker", "pgAdmin"] },
+  { group: "Graphics", items: ["Canvas", "Sprite Animations", "Procreate", "Seamless patterns", "Illustrations", "Adobe"] },
+  { group: "Process & Collaboration", items: ["Technical writing", "Agile", "Scrum", "Jira", "Code Review", "Cross-functional Collaboration"] },
 ];
 
 // Newest first.
